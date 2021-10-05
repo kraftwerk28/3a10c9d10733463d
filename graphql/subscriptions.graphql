@@ -1,0 +1,8 @@
+subscription Todos {
+	latest_todos(order_by: {todo_id: asc}) {
+		todo_id
+		text
+		created_at
+		done
+	}
+}

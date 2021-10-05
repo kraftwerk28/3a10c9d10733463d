@@ -1,0 +1,7 @@
+.todoText {
+	flex: 1;
+}
+
+.todoAction {
+	margin: 0 0.5em;
+}

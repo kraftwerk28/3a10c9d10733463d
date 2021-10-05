@@ -1,0 +1,8 @@
+query AllTodos {
+	latest_todos {
+		todo_id
+		text
+		done
+		created_at
+	}
+}

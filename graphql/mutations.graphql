@@ -1,0 +1,17 @@
+mutation UpdateTodo($todo_id: Int!, $done: Boolean!, $text: String!) {
+	insert_todos_one(object: { done: $done, todo_id: $todo_id, text: $text }) {
+		t
+	}
+}
+
+mutation AddTodo($text: String!) {
+	insert_todos_one(object: {text: $text}) {
+		t
+	}
+}
+
+mutation DeleteTodo($todo_id: Int!) {
+	insert_todos_one(object: {todo_id: $todo_id, text: "", is_deleted: true}) {
+		t
+	}
+}
